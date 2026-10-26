@@ -42,12 +42,17 @@ None of this is hidden in the code: it is what the gateway protocol happens to b
 
 ## Quick start
 
+Not on npm yet — clone it and run the CLI directly:
+
 ```bash
+git clone https://github.com/sarsvankelsion/omnirush-relay.git
+cd omnirush-relay
+
 # 1. Sign in once (opens a browser, prints a code)
-npx omnirush-relay login
+node bin/omnirush-relay.js login
 
 # 2. Start the relay
-npx omnirush-relay serve
+node bin/omnirush-relay.js serve
 
 # 3. Point any client at it
 #    base URL: http://127.0.0.1:8787/v1
@@ -57,13 +62,10 @@ npx omnirush-relay serve
 `login` creates its own device session. The desktop app can stay signed in; the two
 do not share tokens.
 
-### Run it from a checkout
+Add a shell alias if you will use it often:
 
 ```bash
-git clone https://github.com/<you>/omnirush-relay.git
-cd omnirush-relay
-node bin/omnirush-relay.js login
-node bin/omnirush-relay.js serve
+alias omnirush-relay="node \"$PWD/bin/omnirush-relay.js\""
 ```
 
 ## Client configuration
