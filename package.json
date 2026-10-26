@@ -1,0 +1,32 @@
+{
+  "name": "omnirush-relay",
+  "version": "1.0.0",
+  "description": "Local OpenAI- and Anthropic-compatible API gateway for an OmniRush account. Runs without the desktop app.",
+  "type": "module",
+  "bin": {
+    "omnirush-relay": "./bin/omnirush-relay.js"
+  },
+  "main": "./src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node bin/omnirush-relay.js serve",
+    "test": "node --test"
+  },
+  "keywords": [
+    "omnirush",
+    "openai",
+    "anthropic",
+    "proxy",
+    "relay",
+    "gateway"
+  ],
+  "license": "MIT",
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
+}
