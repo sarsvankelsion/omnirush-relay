@@ -148,7 +148,7 @@ the relay from the event stream. The result is a normal `chat.completion` /
 ## Files
 
 ```
-~/.omnirush-relay/auth.json      device session, mode 0600
+~/.omnirush-relay/auth.json      device session (0600 on POSIX; user-profile ACL on Windows)
 ~/.omnirush-relay/config.json    port, host, local API key
 ```
 
